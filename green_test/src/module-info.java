@@ -1,0 +1,2 @@
+module green_test {
+}
