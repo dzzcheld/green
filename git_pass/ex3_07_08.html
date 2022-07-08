@@ -1,0 +1,81 @@
+<html>
+    <script>
+
+        document.addEventListener('DOMContentLoaded',() =>{
+            let counter=0
+            let isConnect=false
+
+            const h1=document.querySelector('h1')
+            const p=document.querySelector('p')
+            const connectButton=document.querySelector('#connect')
+            const disconnectButton=document.querySelector('#disconnect')
+
+            const listener=(event)=>{
+                h1.textContent=`클릭 횟수:${counter++}`
+            }
+
+            connectButton.addEventListener('click' , ()=>{
+                if(isConnect===false){
+                    h1.addEventListener('click', listener)
+                    p.textContent='이벤트 연결 상태:연결'
+                    isConnect=true
+                }
+            })
+
+            disconnectButton.addEventListener('click', ()=>{
+                if(isConnect===true){
+                    h1.removeEventListener('click', listener)
+                    p.textContent='이벤트 연결 상태:해제'
+                    counter=0
+                    isConnect=false
+                }
+            })
+
+        })
+
+        
+        
+    </script>
+
+    <style>
+        h1{
+            user-select:none;
+        }
+    </style>
+
+    <script>
+        /*
+            문서 객체를 읽어들이고 생성하기(이벤트 등록 방식, 이벤트 호출)
+
+            counter 에 0을 저장함
+            isConnect 에 false 값 저장
+
+            h1, p, connectButton, disconnectButton 의 위치를
+            querySelector 를 통해 찾는다
+
+            const listener 에서 무슨 이벤트 인지는 몰라도 이벤트를 호출
+            이벤트 호출시 h1 속성이 증한다
+
+            connectButton 객체에 문서 객체를 읽어들이고 생성
+            (클릭 이벤트, 이벤트 호출)
+            Connect 가 false라면
+            h1 객체에서 문서 객체를 읽어들이고 생성
+            (클릭 이벤트, listener 이벤트 호출)
+            클릭이 증가함
+            p에 대한 textContent 가 변경 되며 Connect도 변경됨
+
+            disconnectButton.addEventListener('click', ()=>
+            연결이
+            
+        */
+    </script>
+
+    <body>
+        <h1>클릭 횟수:0</h1>
+        <button id="connect">이벤트 연결</button>
+        <button id="disconnect">이벤트 제거</button>
+        <p>이벤트 연결 상태:해제</p>
+    </body>
+
+
+</html>
