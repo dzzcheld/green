@@ -1,0 +1,212 @@
+/* 메인 콘텐츠 */
+section#main{
+    width: 990px;
+    margin: auto;
+    height: 900px;
+}
+/* 좌측 카테고리 + 메인 이미지 + 공지사항/주간 이벤트 */
+
+section#cat1{
+    width: 215px;
+    float: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+section#cat1 #cat_title{
+    padding: 12px;
+    background-color: #95c11f;
+    color: #ffffff;
+    text-align: center;
+}
+
+section#cat1 li{
+    color: #666666;
+    padding: 7px 0 7px 30px;
+    border-bottom: 1px solid #cccccc;
+}
+section#cat2{
+    float: left;
+    margin-top: 15px;
+}
+section#cat3{
+    width: 235px;
+    float: left;
+    margin-top: 15px;
+}
+section#cat3 #latest_notice{
+    width: 239px;
+    height: 175px;
+    background-image: url('E:/leedooil_JavaScript/images/notice.JPG');
+    background-repeat: no-repeat;
+}
+section#cat3 #latest_notice ul{
+    padding: 42px 0 0 30px;
+    list-style-image: url('E:/leedooil_JavaScript/images/tick1.png');
+    background-repeat: no-repeat;
+}
+section#cat3 #week_event{
+    width: 239px;
+    height: 191px;
+    margin-top: 11px;
+    background-image: url('E:/leedooil_JavaScript/images/event.JPG');
+    background-repeat: no-repeat;
+}
+section#cat3 #week_event img{
+    margin: 58px 0 0 22px;
+}
+/* 생략 */
+/* 스페셜 숍(special_shop)*/
+section#special_shop {
+    width: 592px;
+    height: 389px;
+    margin-top: 20px;
+    float: left;
+    background-image: url('E:/leedooil_JavaScript/images/special.JPG');
+    background-repeat: no-repeat;
+  }
+  
+  section#special_shop ul {
+    margin: 60px 0 0 25px;
+  }
+  
+  section#special_shop li {
+    display: inline;
+    margin: 0 2px;
+  }
+  
+  section#special_shop img {
+    padding: 20px;
+    border: solid 1px #cccccc;
+  }
+  
+  section#special_banner {
+    float: left;
+    margin: 19px 0 0 5px;
+  }
+  
+  section#special_banner div {
+    width: 392px;
+    height: 129px;
+    margin-top: 1px;
+  }
+  /*스페셜 숍 우측의 배너 3개 
+  
+  */
+  section#special_banner #banner1 {
+    background-image: url(C:/web/02/image/ani.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  section#special_banner #banner2 {
+    background-image: url(C:/web/02/image/ani.jpg);
+    background-repeat: no-repeat;
+  
+  }
+  
+  section#special_banner #banner3 {
+    background-image: url(C:/web/02/image/ani.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  section#special_banner ul {
+    padding: 6px 0 0 132px;
+  
+  }
+  
+  section#special_banner li {
+    display: inline;
+  }
+  /*신규상품*/
+section#new{
+    height: 700px;
+    margin-top: -80px;
+    margin-left: 650px;
+    border-top: solid 2px #9bc32a;
+    width:980px;
+  }
+  section#new h3{
+    margin: 20px 0 0 35px;
+  }
+  section#new h3 span{
+    color: #80a727;
+  
+  }
+  section#new .item{
+    float: left;
+    text-align: center;
+    margin: 20px 0 0 32px;
+  
+  }
+  section#new .item .subject{
+  margin-top: 10px;
+  color: #80a727;
+  }
+  section#new .item .comment{
+    margin-top: 5px;
+    color: #888888;
+  }
+  section#new .item .price{
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  section #right{
+    width:750px;
+    float:right;
+    margin-top:20px;
+}
+
+section #right #summary h3{
+    font-size:16px;
+    padding-bottom:8px;
+    border-bottom:solid 1px #444444;
+}
+
+section #right #summary h3 span{
+    color:#80a727;
+}
+
+section #right #summary1.buttons{
+    text-align:center;
+    margin-top:10px;
+}
+
+section #right #summary2{
+    width:390px;
+    float:right;
+    margin-top:20px;
+}
+
+section #right #summary2.item{
+    margin:20px 0 0 20
+    padding-bottom:10px;
+    border-bottom:solid 1px #cccccc;
+}
+
+section #right #summary2.item li{
+    margin:10px 0 0 0;
+}
+
+section #right #summary2 .col1{
+    width:100px;
+    float:left;
+}
+
+section #right #summary2 .col2{
+    width:200px;
+    float:left;
+}
+section #right #summary2 .size{
+    margin:20px 0 0 20px;
+    padding-bottom:10px;
+    border-bottom:solid 1px #cccccc;
+}
+section #right #summary2 .size li{
+    margin:5px 0;
+}
+section #right #summary2 .buttons{
+    margin:15px 0 0 120px;
+}
+section #right #summary2 .buttoms li{
+    display:inline;
+}

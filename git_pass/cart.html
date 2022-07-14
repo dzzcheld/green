@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 생략 -->
+    <link rel="stylesheet" type="text/css" href="C:\Js\complete\common.css">
+    <link rel="stylesheet" type="text/css" href="C:\Js\complete\main.css">
+    <link rel="stylesheet" type="text/css" href="C:\Js\complete\detail.css">
+    <link rel="stylesheet" type="text/css" href="C:\Js\complete\cart.css">
+</head>
+<body 
+<!----detail 추가------>
+
+
+    <aside id="left" style=margin-left:15px;>
+      <div id="cat_title">
+          CATEGORY ITEM
+      </div>
+      <ul>
+        <li>JAVA</li>
+        <li>C언어</li>
+        <li>Python</li>
+        <li>JAVASCRIPT</li>
+        <li>Kotlin</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>React</li>
+        <li>PHP</li>
+        <li>Jango</li>
+        <li>Android</li>
+      </ul>
+      <div id="customer">
+        <img src="E:\imagess\tel.JPG" >
+      </div>
+    </aside><!--aside left-->
+  
+
+<!----detail 추가------>
+
+    <!-- 생략 -->
+    <section id="right" style="width:80%; margin-right:15px;">
+        <h2 id="cart_title">
+            <span>SHOPPING CART</span>장바구니
+        </h2>
+        <div id="process">
+            <img src="E:\imagess\process.jpg" >
+        </div>
+
+        <table>
+            <tr class="title">
+                <th>선택</th>
+                <th>상품명</th>
+                <th>판매가</th>
+                <th>수량</th>
+                <th>적립금</th>
+                <th>배송비</th>
+                <th>합계</th>
+            </tr>
+            <tr class="items">
+                <td class="col1"><input type="checkbox"></td>
+                <td class="col2">
+                    혼자서 공부하는 자바스크립트 vol.3
+                </td>
+                <td class="col3">19,000원</td>
+                <td class="col4">
+                    <input type="checkbox">
+                    <button>수정</button>
+                </td>
+                <td class="col5">1,000원</td>
+                <td class="col6">0원</td>
+                <td class="col7">19,000원</td>
+            </tr>
+            <tr class="items">
+                <td class="col1"><input type="checkbox"></td>
+                <td class="col2">
+                    스스로 깨우치는 HTML5&CSS5[개정판]
+                </td>
+                <td class="col3">31,000원</td>
+                <td class="col4">
+                    <input type="checkbox">
+                    <button>수정</button>
+                </td>
+                <td class="col5">1,000원</td>
+                <td class="col6">0원</td>
+                <td class="col7">31,000원</td>
+            </tr>
+            <tr class="total_price">
+                <td colspan="7">
+                    [상품 구매 금액] : 50,000 + [배송비] : 0 = [총구매액] : <span>50,000원</span>
+                </td>
+            </tr>
+            <tr class="order_status_box">
+                <td colspan="7">
+                    <div class="order_status">
+                        <p><span>고객님의 총 주문 합계 금액입니다</span></p>
+                        <div>
+                            <ul>
+                                <li class="col1">[상품 구매 금액]:</li>
+                                <li class="col2">50,000원</li>
+                            </ul>
+                            <ul>
+                                <li class="col1">배송비:</li>
+                                <li class="col2">0원</li> 
+                            </ul>
+                            <ul>
+                                <li class="col1"><span>총 주문 합계 금액</span></li>
+                                <li class="col2"><span>50,000원</span></li> 
+                            </ul>
+                        </div>
+                    </div><!-- order_status -->
+                </td>
+            </tr>
+        </table>
+        <ul id="order_buttons">
+            <li><button><b>상품주문</b></button></li>
+            <li><button><b>장바구니 비우기</b></button></li>
+            <li><button><b>쇼핑 계속하기</b></button></li>
+            <li><button><b>선택상품삭제</b></button></li>
+            <li><button><b>전체상품주문</b></button></li>
+            <li><button><b>견적서 출력</b></button></li>
+        </ul>
+    </section><!-- section right -->
+        <!-- 생략 -->
+
+
+
+    <!------------footer (추가)------------------->
+
+    <footer style="z-index:1; bottom:0; position:fixed; width:100%;"><!----수정_Y--->
+        <section id="footer_menu_box">
+          <nav id="footer_menu">
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">주문조회</a></li>
+              <li><a href="#">적립금</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보보호정책</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+        </section>
+        <!--section footer_menu_box-->
+        <section id="footer_box">
+            <div id="footer_logo">
+              <img src="E:\leedooil_JavaScript\images\picture9.JPG" width="100px" height="80px">
+            </div>
+            <div id="address">
+              <img src="E:\leedooil_JavaScript\images\picture10.JPG" width="650px" height="80px">
+            </div>
+            <div id="footer_banner">
+              <img src="E:\leedooil_JavaScript\images\picture11.JPG" width="100px" height="80px">
+            </div>
+          </section>
+          <!--section footer.box-->
+        <!--section footer.box-->
+      </footer>
+
+    <!------------footer (추가)------------------->
+
+</body>
+</html>

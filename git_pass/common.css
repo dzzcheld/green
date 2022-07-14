@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "맑은 고딕","돋움";
+    font-size: 12px;
+    color: #444444;
+    background-color: #f2f0f0;
+}
+ul{
+    list-style-type: none;
+}
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #444444;
+}
+.clear{
+    clear: both;
+}
+/* 헤더 */
+header{
+    height: 128px;
+}
+header #top{
+    width: 990px;
+    margin: 0 auto;
+    /* border:1px solid #0000ff; */
+}
+header #logo{
+    float: left;
+    margin: 30px 0 0 0;
+    /* border:1px solid #000000; */
+}
+/* 검색 */
+header #search{
+    float: left;
+    font-family: "Sans-serif";
+    font-size: 12px;
+    color: #96c11f;
+    margin: 40px 0 0 150px;
+    /* border:1px solid #000000; */
+}
+header #search #search_form{
+    float: left;
+}
+header #search #search_form input{
+    width: 80px;
+    height: 16px;
+    border: 0;
+    background-color: #f2f0f0;
+    border-bottom: 1px solid #cccccc;
+    margin-left: 5px;
+}
+header #search #search_button{
+    float: left;
+    margin: 3px 0 0 3px;
+}
+/* 상단 메뉴 */
+header #top_menu{
+    float: right;
+    margin-top: 45px;
+    /* border:1px solid #000000; */
+}
+header #top_menu a:link{
+    font-size: 11px;
+    color: #88888888;
+}
+header #top_menu a:visited{
+    font-size: 11px;
+    color: #88888888;
+}
+header #top_menu a:hover{
+    font-size: 11px;
+    color: #88888888;
+}
+header #top_menu a:active{
+    font-size: 11px;
+    color: #88888888;
+}
+header #top_menu li.green a:link{
+    color: #96c11f;
+}
+header #top_menu li.green a:visited{
+    color: #96c11f;
+}
+header #top_menu li.green a:hover{
+    color: #96c11f;
+}
+header #top_menu li.green a:active{
+    color: #96c11f;
+}
+header #top_menu li{
+    display: inline;
+    margin-left: 10px;
+}
+/* 메인 메뉴 */
+header #main_menu{
+    height: 38px;
+    margin-top: 15px;
+    background-color: #4e4c4d;
+    /* border:1px solid #0000ff; */
+}
+header #main_menu ul{
+    width: 990px;
+    margin: auto;
+    /* border:1px solid #ff0000; */
+    padding-top: 12px;
+    text-align: center;
+}
+header #main_menu li{
+    display: inline;
+    margin: 0 57px;
+}
+header #main_menu a:link{
+    color: #ffffff;
+}
+header #main_menu a:visited{
+    color: #ffffff;
+}
+header #main_menu a:hover{
+    color: #ffffff;
+}
+header #main_menu a:active{
+    color: #ffffff;
+}
+/* 생략 */
+/*------------푸터-----------*/
+footer {
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  footer #footer_menu_box {
+    height: 40px;
+    background-color: #4e4c4d;
+  }
+  
+  footer #footer_menu {
+    width: 990px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  
+  footer #footer_menu ul {
+    margin-left: 210px;
+  
+  }
+  
+  footer #footer_menu li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  footer #footer_menu a:link {
+    color: #ffffff;
+  }
+  
+  footer #footer_menu a:hover {
+    color: #ffffff;
+  }
+  
+  footer #footer_menu a:visited {
+    color: #ffffff;
+  }
+  footer #footer_menu a:active {
+    color: #ffffff;
+  }
+  
+  footer #footer_box {
+    width: 990px;
+    margin: auto;
+  }
+  
+  footer #footer_box div {
+    float: left;
+  }
+  
+  footer #footer_box #footer_logo {
+    margin: 30px 0 0 30px;
+  }
+  
+  footer #footer_box #address {
+    margin: 30px 0 0 10px;
+  }
+  
+  footer #footer_box #footer_banner {
+    margin: 30px 0 0 70px;
+  }
