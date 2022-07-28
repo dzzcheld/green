@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	
+	function fn(){
+	
+		$.ajax({
+			type:"post",
+			async:false, 
+			url:"http://localhost:8080/pro16/AjaxTest2",
+			dataType:"xml", 
+			
+			//통신이 성공적으로 이루어졌을 때 이 함수를 타게 된다.
+			success:function(info, textStatus){
+				
+				/*
+				매개변수 info 에서 book 엘리먼트를 찾으면 함수가 실행된다
+				(book 요소를 찾고나서 title, writer, image가 나오면 vat 형태로 저장한다.)
+				
+				*/	
+				$(info).find("book").each(function(){
+				
+				/* 전송된 XML 데이터에서 엘리먼트 이름으로 데이터를 가져옵니다. */
+				var title=$(this).find("title").text();
+				var writer=$(this).find("writer").text();
+				var image=$(this).find("image").text();
+				
+				/* id가 bookinfo인 <div> 엘리먼트에 도서 정보를 표기한다. */
+				$("#bookInfo").append(
+						"<p>" + title + "</p>" +
+						"<p>" + writer + "</p>" + 
+						"<img src="+image+"/>"
+				); //bookInfo
+				
+				});//info
+			},//success
+			error:function(data,textStatus){
+				alert("error");
+			},
+			complete:function(data, textStatus){
+				alert("작업을 완료했습니다.");
+			}
+		});//ajax
+	}//process
+</script>
+</head>
+<body>
+
+	<div id="bookInfo"></div>
+	<input type="submit" value="도서정보 요청" onclick="fn()"/>
+
+</body>
+</html>
