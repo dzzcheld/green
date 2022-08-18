@@ -1,0 +1,53 @@
+2022_08_18
+=============================================================================
+테이블간 foreign 키로 연결되어 있을때 삭제 하려고하면 오류발생
+=>
+외래키를 delete로 삭제하여 연결을 끊어준다
+=============================================================================
+test03/listMembers
+에서 table 을 수정해도 바뀌지 않는 현상이 있었음
+=>
+(해결)
+C:\jsp_workspace\pro23\src\main\java\com\spring\ex04\MemberServlet.java
+에서 nextPage="test02/listMembers.jsp"; 를 nextPage="test03/listMembers.jsp";로 수정해서 해결함
+=============================================================================
+C:\jsp_workspace\pro23\src\main\webapp\test03\serachMember.jsp
+실행 하였으나, sql 문법 오류 발생
+=>
+C:\jsp_workspace\pro23\src\main\java\mybatis\mappers\member.xml
+<select id="searchMember" parameterType="memberVO" resultMap="memResult">
+		<![CDATA[
+			select * from t_member
+		]]>
+에서 from을 form으로 기재하였음
+
+C:\jsp_workspace\pro23\src\main\java\com\spring\ex04\MemberDAO.java
+파일에서
+public List<MemberVO> searchMember(MemberVO memberVO){
+		
+			sqlMapper=getInstance();
+			SqlSession session=sqlMapper.openSession();
+			List list=session.selectList("mapper.member.searchMember", memberVO);
+			return list;
+			}   에서 오타
+
+=============================================================================		
+/pro23/src/main/java/mybatis/mappers/member.xml
+
+<select id="foreachSelect" resultMap="memResult" parameterType="java.util.Map">
+		<![CDATA[
+			select * from t_member
+		]]>
+		
+		where name in 
+		<foreach item="item" collection="list" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+		order by joinDate desc
+	</select>
+
+구문은 새로운 id가 다르기에 다른 select에 넣어야된다
+
+=============================================================================		
+mariaDB 테이블에서
+외래 키 클릭, UPDATE, DELETE를 CASCADE로 바꾼다
