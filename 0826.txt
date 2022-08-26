@@ -1,0 +1,21 @@
+listArticles 에서
+/board/articleForm.do
+
+articleForm 파일
+
+tile에서
+jsp에서 jsp로 전달해준다
+================================================================================================================================================================
+<글쓰기 창>
+articleForm 파일
+
+<form action="${contextPath}/board/addNewArticle.do" name="articleForm" method="post" enctype="multipart/form-data">
+<input type="submit" value="글쓰기" />
+
+contextPath 로 인해 맵핑
+
+BoardControllerImpl로 이동
+addNewArticle 찾아 들어가
+BoaedDAOImpl 에 insertNewArticle 메서드 설정이 없음
+
+Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.spring.pro27.member.vo.MemberVO.getId()" because "memberVO" is null
